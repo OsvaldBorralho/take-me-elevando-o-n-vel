@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import logoLight from "@/assets/logo-light-bg.png";
 
-const WHATSAPP_URL = "https://wa.me/5598302383838?text=Olá! Gostaria de saber mais sobre a Take-me.";
+const WHATSAPP_URL = "https://wa.me/559830238383?text=Olá! Gostaria de saber mais sobre a Take-me.";
 const INSTAGRAM_URL = "https://instagram.com/takeme.app";
 
 const navLinks = [

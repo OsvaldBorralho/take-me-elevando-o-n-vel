@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import useSEO from "@/hooks/useSEO";
 
-const WHATSAPP_URL = "https://wa.me/5598302383838?text=Olá! Gostaria de saber mais sobre a Take-me.";
+const WHATSAPP_URL = "https://wa.me/559830238383?text=Olá! Gostaria de saber mais sobre a Take-me.";
 const INSTAGRAM_URL = "https://instagram.com/takeme.app";
 
 const Contact = () => {
@@ -36,7 +36,7 @@ const Contact = () => {
               </div>
               <div className="flex-1">
                 <h2 className="font-heading font-semibold text-lg">WhatsApp</h2>
-                <p className="text-sm text-muted-foreground">(98) 30238-38383</p>
+                <p className="text-sm text-muted-foreground"><p className="text-sm text-muted-foreground">(98) 3023-8383</p></p>
               </div>
               <Button variant="whatsapp" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="gap-2">
