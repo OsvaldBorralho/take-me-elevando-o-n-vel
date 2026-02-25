@@ -37,7 +37,7 @@ const Terms = () => {
             <p>A Take-me pode atualizar estes termos a qualquer momento, sendo o usuário notificado sobre mudanças significativas.</p>
 
             <h2 className="text-xl font-heading font-semibold text-foreground">8. Contato</h2>
-            <p>Para dúvidas sobre estes termos, entre em contato pelo e-mail atendimento@takeme.app.br ou WhatsApp (98) 30238-38383.</p>
+            <p>Para dúvidas sobre estes termos, entre em contato pelo e-mail atendimento@takeme.app.br ou WhatsApp (98) 3023-8383.</p>
           </div>
         </div>
       </section>

@@ -38,7 +38,7 @@ const Privacy = () => {
             <p>Esta política pode ser atualizada periodicamente. A versão mais recente estará sempre disponível nesta página.</p>
 
             <h2 className="text-xl font-heading font-semibold text-foreground">8. Contato</h2>
-            <p>Para dúvidas sobre esta política, entre em contato pelo e-mail atendimento@takeme.app.br ou WhatsApp (98) 30238-38383.</p>
+            <p>Para dúvidas sobre esta política, entre em contato pelo e-mail atendimento@takeme.app.br ou WhatsApp (98) 3023-8383.</p>
           </div>
         </div>
       </section>

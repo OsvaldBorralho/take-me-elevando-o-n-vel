@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Instagram, Mail, Phone } from "lucide-react";
 import logoLight from "@/assets/logo-light-bg.png";
 
-const WHATSAPP_URL = "https://wa.me/5598302383838?text=Olá! Gostaria de saber mais sobre a Take-me.";
+const WHATSAPP_URL = "https://wa.me/559830238383?text=Olá! Gostaria de saber mais sobre a Take-me.";
 const INSTAGRAM_URL = "https://instagram.com/takeme.app";
 
 const Footer = () => {
@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-primary-foreground/50 hover:text-accent transition-colors">
                 <Phone className="w-4 h-4" />
-                (98) 30238-38383
+                (98) 3023-8383
               </a>
               <a href="mailto:atendimento@takeme.app.br" className="flex items-center gap-2 text-sm text-primary-foreground/50 hover:text-accent transition-colors">
                 <Mail className="w-4 h-4" />
