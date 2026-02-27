@@ -1,7 +1,8 @@
-import { Instagram } from "lucide-react";
+import { Instagram, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const INSTAGRAM_URL = "https://instagram.com/takeme.app";
+const INSTAGRAM_URL = "https://www.instagram.com/takeme_app/";
+const INSTAGRAM_WIDGET_IFRAME_SRC = import.meta.env.VITE_INSTAGRAM_WIDGET_IFRAME_SRC as string | undefined;
 
 const InstagramFeed = () => {
   return (
@@ -16,33 +17,47 @@ const InstagramFeed = () => {
           </p>
         </div>
 
-        {/* Widget placeholder / embed area */}
         <div className="max-w-4xl mx-auto mb-8">
-          {/* 
-            CONFIGURAÇÃO DO WIDGET INSTAGRAM:
-            Cole aqui o código embed do Elfsight, SnapWidget ou LightWidget.
-            Exemplo Elfsight: <div class="elfsight-app-XXXXXXXX" data-elfsight-app-lazy></div>
-          */}
-          <div id="instagram-widget" className="grid grid-cols-3 md:grid-cols-3 gap-3">
-            {Array.from({ length: 9 }).map((_, i) => (
-              <div
-                key={i}
-                className="aspect-square rounded-lg bg-muted/60 flex items-center justify-center group hover:bg-muted transition-colors cursor-pointer"
-              >
-                <Instagram className="w-6 h-6 text-muted-foreground/40 group-hover:text-accent transition-colors" />
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-xs text-muted-foreground/60 mt-3">
-            Posts serão carregados automaticamente após configurar o widget.
-          </p>
+          {INSTAGRAM_WIDGET_IFRAME_SRC ? (
+            <iframe
+              src={INSTAGRAM_WIDGET_IFRAME_SRC}
+              title="Instagram @takeme_app"
+              scrolling="no"
+              className="lightwidget-widget w-full border-0 overflow-hidden rounded-lg"
+              style={{ width: "100%" }}
+              loading="lazy"
+            />
+          ) : (
+            <div className="rounded-xl border border-border bg-card p-8 text-center">
+              <AlertCircle className="w-10 h-10 text-muted-foreground/50 mx-auto mb-4" />
+              <h3 className="font-heading font-semibold text-lg mb-2 text-foreground">
+                Feed do Instagram não configurado
+              </h3>
+              <p className="text-sm text-muted-foreground max-w-md mx-auto leading-relaxed">
+                Para exibir os posts, configure a variável de ambiente{" "}
+                <code className="bg-muted px-1.5 py-0.5 rounded text-xs font-mono">
+                  VITE_INSTAGRAM_WIDGET_IFRAME_SRC
+                </code>{" "}
+                com a URL do iframe gerada no{" "}
+                <a
+                  href="https://lightwidget.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent underline"
+                >
+                  LightWidget
+                </a>
+                .
+              </p>
+            </div>
+          )}
         </div>
 
         <div className="text-center">
           <Button variant="accent" size="lg" asChild>
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="gap-2">
               <Instagram className="w-5 h-5" />
-              Ver no Instagram (@takeme.app)
+              Ver no Instagram (@takeme_app)
             </a>
           </Button>
         </div>

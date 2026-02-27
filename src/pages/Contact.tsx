@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import useSEO from "@/hooks/useSEO";
 
 const WHATSAPP_URL = "https://wa.me/559830238383?text=Olá! Gostaria de saber mais sobre a Take-me.";
-const INSTAGRAM_URL = "https://instagram.com/takeme.app";
+const INSTAGRAM_URL = "https://www.instagram.com/takeme_app/";
 
 const Contact = () => {
   useSEO({
@@ -68,7 +68,7 @@ const Contact = () => {
               </div>
               <div className="flex-1">
                 <h2 className="font-heading font-semibold text-lg">Instagram</h2>
-                <p className="text-sm text-muted-foreground">@takeme.app</p>
+                <p className="text-sm text-muted-foreground">@takeme_app</p>
               </div>
               <Button variant="accent" asChild>
                 <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="gap-2">

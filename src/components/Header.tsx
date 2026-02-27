@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import logoLight from "@/assets/logo-light-bg.png";
 
 const WHATSAPP_URL = "https://wa.me/559830238383?text=Olá! Gostaria de saber mais sobre a Take-me.";
-const INSTAGRAM_URL = "https://instagram.com/takeme.app";
+const INSTAGRAM_URL = "https://www.instagram.com/takeme_app/";
 
 const navLinks = [
   { label: "Início", to: "/" },
@@ -48,7 +48,7 @@ const Header = () => {
 
         {/* Desktop Actions */}
         <div className="hidden lg:flex items-center gap-3">
-          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram @takeme.app" className="text-primary-foreground/70 hover:text-accent transition-colors">
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram @takeme_app" className="text-primary-foreground/70 hover:text-accent transition-colors">
             <Instagram className="w-5 h-5" />
           </a>
           <Button variant="hero" size="sm" asChild>
