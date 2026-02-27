@@ -2,7 +2,7 @@ import { Instagram, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const INSTAGRAM_URL = "https://www.instagram.com/takeme_app/";
-const INSTAGRAM_WIDGET_IFRAME_SRC = import.meta.env.VITE_INSTAGRAM_WIDGET_IFRAME_SRC as string | undefined;
+const INSTAGRAM_WIDGET_IFRAME_SRC = "//lightwidget.com/widgets/bacb424749a65b3bbd83bfa32122c580.html";
 
 const InstagramFeed = () => {
   return (
@@ -23,6 +23,7 @@ const InstagramFeed = () => {
               src={INSTAGRAM_WIDGET_IFRAME_SRC}
               title="Instagram @takeme_app"
               scrolling="no"
+              allowTransparency={true}
               className="lightwidget-widget w-full border-0 overflow-hidden rounded-lg"
               style={{ width: "100%" }}
               loading="lazy"
