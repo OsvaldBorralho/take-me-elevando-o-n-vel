@@ -3,7 +3,7 @@ import { Instagram, Mail, Phone } from "lucide-react";
 import logoLight from "@/assets/logo-light-bg.png";
 
 const WHATSAPP_URL = "https://wa.me/559830238383?text=Olá! Gostaria de saber mais sobre a Take-me.";
-const INSTAGRAM_URL = "https://www.instagram.com/takeme_app/";
+const INSTAGRAM_URL = "https://www.instagram.com/takeme.app/";
 
 const Footer = () => {
   return (
@@ -66,7 +66,7 @@ const Footer = () => {
               </a>
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-primary-foreground/50 hover:text-accent transition-colors">
                 <Instagram className="w-4 h-4" />
-                @takeme_app
+                @takeme.app
               </a>
             </div>
           </div>

@@ -60,6 +60,27 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Integração com Instagram
+
+A seção "Acompanhe a Take-me" exibe os 9 últimos posts do Instagram automaticamente via **Instagram Graph API**, usando uma Edge Function no backend (Lovable Cloud).
+
+### Variáveis de ambiente necessárias (secrets do backend)
+
+| Variável | Descrição |
+|---|---|
+| `IG_ACCESS_TOKEN` | Token de acesso longo do Instagram Graph API |
+| `IG_USER_ID` | ID numérico da conta do Instagram |
+| `IG_GRAPH_VERSION` | Versão da API (opcional, padrão: `v23.0`) |
+
+### Como obter o token
+
+1. Acesse [developers.facebook.com](https://developers.facebook.com) e crie um App (tipo Business)
+2. Adicione o produto **Instagram Graph API**
+3. Conecte a conta `@takeme.app` (precisa ser Business ou Creator)
+4. No Graph API Explorer, gere um token com permissão `instagram_basic`
+5. Converta para **long-lived token** (dura 60 dias)
+6. Adicione as variáveis como secrets no Lovable Cloud
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
