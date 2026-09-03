@@ -4,7 +4,7 @@ import { Menu, X, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import logoLight from "@/assets/logo-light-bg.png";
+import logoAsset from "@/assets/takeme-logo.png.asset.json";
 
 const WHATSAPP_URL = "https://wa.me/559830238383?text=Olá! Gostaria de saber mais sobre a Take-me.";
 const INSTAGRAM_URL = "https://www.instagram.com/takeme.app/";
@@ -27,7 +27,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         {/* Logo */}
         <Link to="/" className="shrink-0">
-          <img src={logoLight} alt="Take-me" className="h-8 w-auto brightness-0 invert" />
+          <img src={logoAsset.url} alt="Take-me" className="h-9 w-auto object-contain mix-blend-screen" />
         </Link>
 
         {/* Desktop Nav */}
