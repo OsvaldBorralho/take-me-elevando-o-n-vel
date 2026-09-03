@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Mail, Phone } from "lucide-react";
-import logoAsset from "@/assets/takeme-logo.png.asset.json";
+import logoUrl from "@/assets/takeme-logo.png";
 
 const WHATSAPP_URL = "https://wa.me/559830238383?text=Olá! Gostaria de saber mais sobre a Take-me.";
 const INSTAGRAM_URL = "https://www.instagram.com/takeme.app/";
@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block">
-              <img src={logoAsset.url} alt="Take-me" className="h-9 w-auto object-contain mix-blend-screen" />
+              <img src={logoUrl} alt="Take-me" className="h-9 w-auto object-contain mix-blend-screen" />
             </Link>
             <p className="mt-3 text-sm text-primary-foreground/60 leading-relaxed">
               Mobilidade intermunicipal com conforto, conectividade e organização.
